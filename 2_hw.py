@@ -23,3 +23,13 @@ if a:
     print('a = True')
 else:
     print("a != True")
+
+
+a: int = 6
+b: str = 'строчка'
+с: list = [1, 2]
+
+def indent(s: str, width: int) -> str:
+    return  " " * (max(0, width - len(s))) + s
+
+print(indent('69', 13))
